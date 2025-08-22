@@ -1,1 +1,40 @@
+title: Suspicious External Remote Service Access (T1133)
+id: 0e94f5e8-95bf-4a92-9d0b-72a27d62a7b0
+status: experimental
+description: Detects possible external remote service usage, including SSH and RDP.
+author: Rama
+date: 2025/08/22
+
+logsource:
+  product: windows
+  service: security
+  category: authentication
+
+detection:
+  selection_event:
+    EventID: 4624
+    LogonType: 10   
+
+  selection_ports:
+    Port:
+      - 22
+      - 3389
+
+  filter_internal_ips:
+    IpAddress:
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+
+  filter_admin_accounts:
+    TargetUserName: Administrator
+
+  condition: selection_event and selection_ports and not (filter_internal_ips or filter_admin_accounts)
+
+falsepositives:
+  - Legitimate remote access by employees or administrators
+level: high
+tags:
+  - attack.initial_access
+  - attack.t1133
 
