@@ -26,6 +26,5 @@ The goal is to provide **structured detection coverage** across the attack lifec
 ## ⚡ Features
 
 - Structured detection aligned with the **Cyber Kill Chain**.  
-- Cross-platform detection support for multiple SIEMs.  
 - Easy-to-understand, maintainable Sigma rules.  
 - Open-source and community-friendly.  
