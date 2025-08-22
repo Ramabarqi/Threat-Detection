@@ -3,7 +3,7 @@ id: 0e94f5e8-95bf-4a92-9d0b-72a27d62a7b0
 status: experimental
 description: Detects possible external remote service usage, including SSH and RDP.
 author: Rama
-date: 2025/08/22
+date: 2025/08/15
 
 logsource:
   product: windows
