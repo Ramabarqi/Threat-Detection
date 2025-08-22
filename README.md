@@ -1,2 +1,23 @@
-# Threat-Detection
-In this repository I will create Yara rules and Sigma rules based on Cyber Kill Chain.
+Threat Detection
+
+🚀 Author:Rama
+
+
+🔍 Role: Security Analyst | SOC Analyst |
+
+💡 About This Repository
+This repository contains custom Sigma rules designed for threat detection based on the Cyber Kill Chain framework. 
+Each Sigma rule is aimed at detecting suspicious or malicious activities corresponding to specific phases of the kill chain.
+
+The goal is to provide structured detection coverage across the attack lifecycle, helping SOC teams identify threats early and respond effectively.
+
+📁 Cyber Kill Chain Phases & Detection Focus
+
+✅ Sigma Rules
+suspicious_cronjob.yml — Example Sigma rule detecting suspicious scheduled tasks (Installation phase).
+(Future Sigma rules will be categorized by Cyber Kill Chain phase.)
+
+⚡ Features
+Structured detection aligned with the Cyber Kill Chain.
+Cross-platform detection support for multiple SIEMs.
+Easy-to-understand, maintainable Sigma rules.
