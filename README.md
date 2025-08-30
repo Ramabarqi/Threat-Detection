@@ -18,13 +18,10 @@ The goal is to provide **structured detection coverage** across the attack lifec
 ## 📁 Contents
 
 ### ✅ Sigma Rules
-- `suspicious_cronjob.yml` — Example Sigma rule detecting suspicious scheduled tasks (**Installation phase**).  
-- *(Future Sigma rules will be categorized by Cyber Kill Chain phase.)*  
-
+- -
 ---
 
 ## ⚡ Features
 
 - Structured detection aligned with the **Cyber Kill Chain**.  
 - Easy-to-understand, maintainable Sigma rules.  
-- Open-source and community-friendly.  
